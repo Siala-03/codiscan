@@ -56,6 +56,7 @@ export function HomePage({ navigate }: HomePageProps) {
                 <img
                   src="https://images.pexels.com/photos/7088828/pexels-photo-7088828.jpeg"
                   alt="Digital X-Ray System"
+                  loading="lazy"
                   className="w-full h-full object-cover" />
 
               </div>
@@ -94,6 +95,7 @@ export function HomePage({ navigate }: HomePageProps) {
                 <img
                   src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80"
                   alt="Patient Monitoring System"
+                  loading="lazy"
                   className="w-full h-full object-cover" />
 
               </div>

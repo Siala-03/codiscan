@@ -60,11 +60,12 @@ export function Navbar({ currentPage, navigate }: NavbarProps) {
           className="flex items-center gap-2.5 flex-shrink-0"
           aria-label="Codiscan home">
 
-          {/* logo image - drop your file into dist/assets and reference here */}
+          {/* logo image - place logo.png in public/assets and it will be served at /assets/logo.png */}
           <img
             src="/assets/logo.png"
             alt="Codiscan"
-            className="w-9 h-9 rounded-lg" />
+            loading="lazy"
+            className="w-32 h-32 rounded-lg" />
 
         </button>
 

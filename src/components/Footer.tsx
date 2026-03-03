@@ -27,6 +27,7 @@ export function Footer({ navigate }: FooterProps) {
             <img
               src="/assets/logo.png"
               alt="Codiscan"
+              loading="lazy"
               className="w-9 h-9 rounded-lg" />
               <span
                 className="text-white font-bold text-xl tracking-tight"

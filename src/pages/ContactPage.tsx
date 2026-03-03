@@ -498,6 +498,7 @@ export function ContactPage({ navigate }: ContactPageProps) {
                 <img
                   src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80"
                   alt="Healthcare professionals"
+                  loading="lazy"
                   className="w-full h-48 object-cover" />
 
               </div>

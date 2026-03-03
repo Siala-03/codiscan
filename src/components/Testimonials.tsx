@@ -105,7 +105,7 @@ export function Testimonials() {
 
                   Dr. Amina Uwase
                 </p>
-                <p className="text-gray-400 text-xs">Kigali Central Hospital</p>
+                <p className="text-gray-400 text-xs">Horebu Hospital</p>
               </div>
             </div>
           </motion.div>

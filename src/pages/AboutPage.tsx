@@ -65,9 +65,9 @@ export function AboutPage({ navigate }: AboutPageProps) {
               <span className="text-[#06b6d4]">Across Rwanda</span>
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              Founded in 2019, Codiscan was built on a simple belief: every
+              Founded in 2019, Codiscan was built on a simple belief that every
               Rwandan patient deserves access to world-class diagnostic and
-              treatment equipment — regardless of their facility's budget.
+              treatment equipment, regardless of their facility's budget.
             </p>
           </motion.div>
         </div>
@@ -427,11 +427,11 @@ export function AboutPage({ navigate }: AboutPageProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
             {
-              name: 'Dr. Emmanuel Nkurunziza',
+              name: 'Alex Musyoka',
               role: 'CEO & Co-Founder',
               initials: 'EN',
               color: 'bg-[#06b6d4]',
-              bio: 'Former Ministry of Health advisor with 15 years in healthcare infrastructure.'
+              bio: 'Over 15 years of experience in healthcare technology and innovation. Previously founded Vieberg East Africa, Mitdash among others in Kenya.'
             },
             {
               name: 'Claudette Uwimana',

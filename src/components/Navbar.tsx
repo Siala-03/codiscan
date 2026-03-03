@@ -65,7 +65,7 @@ export function Navbar({ currentPage, navigate }: NavbarProps) {
             src="/assets/logo.png"
             alt="Codiscan"
             loading="lazy"
-            className="w-32 h-32 rounded-lg" />
+            className="w-12 h-12 rounded-lg" />
 
         </button>
 

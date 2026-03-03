@@ -77,8 +77,7 @@ export function HomePage({ navigate }: HomePageProps) {
                     X-Ray, MRI, CT scanners, and ultrasound systems.
                   </p>
                 </div>
-                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">
-                  From $180/month
+                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">                  
                 </p>
               </div>
             </motion.div>
@@ -117,7 +116,6 @@ export function HomePage({ navigate }: HomePageProps) {
                   </p>
                 </div>
                 <p className="text-[#06b6d4] text-sm font-semibold mt-auto">
-                  From $75/month
                 </p>
               </div>
             </motion.div>
@@ -154,8 +152,7 @@ export function HomePage({ navigate }: HomePageProps) {
                     Operating tables, surgical lights, and laparoscopic systems.
                   </p>
                 </div>
-                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">
-                  From $140/month
+                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">                  
                 </p>
               </div>
             </motion.div>

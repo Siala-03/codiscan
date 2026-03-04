@@ -228,27 +228,27 @@ export function AboutPage({ navigate }: AboutPageProps) {
             <div className="flex flex-col gap-10">
               {[
               {
-                year: '2019',
+                year: '2022',
                 title: 'Founded in Kigali',
                 desc: 'Codiscan launched with 5 equipment categories and 8 partner clinics in Kigali City.'
               },
               {
-                year: '2020',
+                year: '2023',
                 title: 'National Expansion',
                 desc: 'Expanded to all 5 provinces of Rwanda, partnering with district hospitals and health centers.'
               },
               {
-                year: '2021',
+                year: '2024',
                 title: 'WHO Certification',
                 desc: 'Achieved WHO-certified equipment supplier status and launched our 5-year warranty program.'
               },
               {
-                year: '2022',
+                year: '2025',
                 title: '100 Partner Milestone',
                 desc: 'Reached 100 partner facilities and introduced our online equipment request portal.'
               },
               {
-                year: '2024',
+                year: '2026',
                 title: 'Regional Growth',
                 desc: 'Expanded services to neighboring East African markets with 50+ equipment categories.'
               }].

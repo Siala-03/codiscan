@@ -184,7 +184,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     fontFamily: "'Plus Jakarta Sans', sans-serif"
                   }}>
 
-                  2019
+                  2022
                 </p>
                 <p className="text-gray-500 text-sm mt-1">Founded in Kigali</p>
               </div>

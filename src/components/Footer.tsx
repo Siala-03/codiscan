@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 import {
   TwitterIcon,
   LinkedinIcon,
@@ -25,17 +26,15 @@ export function Footer({ navigate }: FooterProps) {
 
               {/* logo image - use file placed in dist/assets */}
             <img
-              src="/assets/logo.png"
+              src={logo}
               alt="Codiscan"
               loading="lazy"
-              className="w-9 h-9 rounded-lg" />
+              className="w-32 h-32 rounded-lg" />
               <span
                 className="text-white font-bold text-xl tracking-tight"
                 style={{
                   fontFamily: "'Plus Jakarta Sans', sans-serif"
-                }}>
-
-                Codiscan
+                }}>                
               </span>
             </button>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">

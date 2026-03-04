@@ -92,7 +92,7 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80"
+                  src="https://images.pexels.com/photos/939325/pexels-photo-939325.jpeg"
                   alt="Patient Monitoring System"
                   loading="lazy"
                   className="w-full h-full object-cover" />
@@ -130,7 +130,7 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&q=80"
+                  src="https://images.pexels.com/photos/7585026/pexels-photo-7585026.jpeg"
                   alt="Surgical Equipment"
                   className="w-full h-full object-cover" />
 

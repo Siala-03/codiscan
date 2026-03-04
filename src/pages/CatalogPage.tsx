@@ -71,7 +71,7 @@ const products: Product[] = [
   name: 'Portable Ultrasound ProScan',
   category: 'imaging',
   image:
-  'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80',
+  'https://images.pexels.com/photos/8352121/pexels-photo-8352121.jpeg',
   description:
   'Compact, cart-based ultrasound with multi-frequency probes for OB/GYN, cardiac, and abdominal imaging.',
   specs: [
@@ -153,7 +153,7 @@ const products: Product[] = [
   name: 'Electric Operating Table OT-500',
   category: 'surgical',
   image:
-  'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&q=80',
+  'https://images.pexels.com/photos/17092745/pexels-photo-17092745.jpeg',
   description:
   'Fully electric, multi-position operating table with carbon fiber tabletop for X-ray transparency and C-arm compatibility.',
   specs: [
@@ -169,7 +169,7 @@ const products: Product[] = [
   name: 'LED Surgical Light System',
   category: 'surgical',
   image:
-  'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80',
+  'https://images.pexels.com/photos/36101262/pexels-photo-36101262.jpeg',
   description:
   'Ceiling-mounted dual-head LED surgical light with 160,000 lux intensity and shadow-free illumination.',
   specs: [
@@ -283,7 +283,7 @@ const products: Product[] = [
   name: 'Oxygen Concentrator 10L',
   category: 'respiratory',
   image:
-  'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80',
+  'https://images.pexels.com/photos/9408873/pexels-photo-9408873.jpeg',
   description:
   'Medical-grade 10 LPM oxygen concentrator delivering 93% ±3% purity for continuous oxygen therapy.',
   specs: [
@@ -300,7 +300,7 @@ const products: Product[] = [
   name: 'Class B Autoclave 23L',
   category: 'sterilization',
   image:
-  'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80',
+  'https://images.pexels.com/photos/8413159/pexels-photo-8413159.jpeg',
   description:
   'Class B pre-vacuum autoclave with 23L chamber for sterilizing wrapped, hollow, and porous instruments.',
   specs: [

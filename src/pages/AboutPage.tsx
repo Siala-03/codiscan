@@ -171,7 +171,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
 
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80"
+                  src="https://images.pexels.com/photos/6129203/pexels-photo-6129203.jpeg"
                   alt="Modern hospital facility in Rwanda"
                   className="w-full h-[480px] object-cover" />
 

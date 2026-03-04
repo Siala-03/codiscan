@@ -53,7 +53,7 @@ export function Navbar({ currentPage, navigate }: NavbarProps) {
           <img
             src={logo}
             alt="Codiscan"
-            className="h-10 w-auto object-contain"
+            className="h-32 w-32 object-contain"
           />
         </button>
 

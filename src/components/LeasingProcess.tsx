@@ -33,7 +33,7 @@ const steps = [
   icon: HeadphonesIcon,
   title: 'Ongoing Support',
   description:
-  'Benefit from our 5-year warranty, scheduled maintenance visits, and 24/7 technical support throughout your lease.'
+  'Benefit from lifetime equipment support, scheduled maintenance visits, and 24/7 technical support throughout your lease.'
 }];
 
 export function LeasingProcess() {

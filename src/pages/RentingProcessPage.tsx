@@ -78,7 +78,7 @@ const faqs = [
 },
 {
   q: 'What happens if equipment breaks down?',
-  a: 'All rented equipment is covered by our 5-year warranty. In the event of a breakdown, our Kigali-based technicians will respond within 4 hours for critical equipment and 24 hours for non-critical items. We provide a replacement unit if repairs take longer than 48 hours.'
+  a: 'All rented equipment is covered by our lifetime support program. In the event of a breakdown, our Kigali-based technicians will respond within 24 hours. We provide a replacement unit if repairs take longer than 48 hours.'
 },
 {
   q: 'Can I upgrade equipment during the rent?',

@@ -144,7 +144,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     size={20} />
 
                   <span className="text-gray-700 font-medium">
-                    Kigali-based support team, 48hr delivery guarantee
+                    Kigali-based support team, 24hr delivery guarantee
                   </span>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircleIcon className="text-[#06b6d4] flex-shrink-0 mt-1" size={20} />
-                      <span className="text-gray-600">Over 100 healthcare facilities equipped with modern diagnostic imaging</span>
+                      <span className="text-gray-600">Over 20 healthcare facilities equipped with modern diagnostic imaging</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircleIcon className="text-[#06b6d4] flex-shrink-0 mt-1" size={20} />

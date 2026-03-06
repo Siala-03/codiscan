@@ -517,7 +517,7 @@ export function ContactPage({ navigate }: ContactPageProps) {
                   {[
                   'WHO & CE certified equipment only',
                   'No hidden fees or surprise charges',
-                  '5-year warranty on all equipment',
+                  'Lifetime support through equipment lifecycle',
                   '48-hour delivery guarantee',
                   'Kodiscan-based support team'].
                   map((item) =>

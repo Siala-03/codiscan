@@ -20,13 +20,13 @@ const stats: StatItem[] = [
   label: 'Partner Clinics'
 },
 {
-  value: '3-Year',
-  numericValue: 5,
-  suffix: '-Year',
-  label: 'Warranty Support'
+  value: 'Support',
+  numericValue: 0,
+  suffix: '',
+  label: 'Machine Lifetime Support'
 },
 {
-  value: '48hr',
+  value: '24hr',
   numericValue: 48,
   suffix: 'hr',
   label: 'Delivery'

@@ -71,7 +71,7 @@ export function Hero() {
 
             <span className="text-white">Advanced Medical</span>
             <br />
-            <span className="text-[#06b6d4]">Equipment Leasing</span>
+            <span className="text-[#06b6d4]">Equipment Renting</span>
             <br />
             <span className="text-white">for Clinical Facilities.</span>
           </motion.h1>
@@ -83,7 +83,7 @@ export function Hero() {
 
             Access state-of-the-art diagnostic, surgical, and monitoring
             equipment without the massive capital expenditure. Partner with
-            Codiscan today.
+            Kodiscan today.
           </motion.p>
 
           {/* CTAs */}

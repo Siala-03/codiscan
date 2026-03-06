@@ -1,12 +1,14 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { StarIcon } from 'lucide-react';
+
 export function Testimonials() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, {
     once: true,
     margin: '-80px'
   });
+
   return (
     <section
       className="w-full bg-[#f8fafc] py-20 lg:py-28"
@@ -83,7 +85,7 @@ export function Testimonials() {
             </div>
             {/* Quote */}
             <blockquote className="text-gray-600 text-sm leading-relaxed flex-1">
-              "Codiscan transformed our ICU capabilities overnight. The
+              "Kodiscan transformed our ICU capabilities overnight. The
               equipment quality is exceptional and their team installed
               everything within 24 hours. Our patient outcomes have improved
               dramatically since the upgrade."
@@ -142,8 +144,8 @@ export function Testimonials() {
             </div>
             {/* Quote */}
             <blockquote className="text-gray-600 text-sm leading-relaxed flex-1">
-              "The leasing model allowed us to upgrade our entire radiology
-              department without touching our capital budget. Codiscan's
+              "The renting model allowed us to upgrade our entire radiology
+              department without touching our capital budget. Kodiscan's
               flexible 36-month plan was exactly what we needed for our
               university hospital."
             </blockquote>
@@ -205,7 +207,7 @@ export function Testimonials() {
             <blockquote className="text-gray-600 text-sm leading-relaxed flex-1">
               "Responsive support team — our ventilator equipment arrived on
               time and the technician stayed for two days to train our nursing
-              staff. I highly recommend Codiscan to any district facility."
+              staff. I highly recommend Kodiscan to any district facility."
             </blockquote>
             {/* Author */}
             <div className="flex items-center gap-3 pt-2 border-t border-gray-100">
@@ -232,6 +234,6 @@ export function Testimonials() {
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

@@ -8,7 +8,7 @@ import {
 'lucide-react';
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
-import { WhyCodiscan } from '../components/WhyCodiscan';
+import { WhyKodiscan } from '../components/WhyKodiscan';
 import { Testimonials } from '../components/Testimonials';
 import { ContactCTA } from '../components/ContactCTA';
 import { type Page } from '../App';
@@ -37,13 +37,12 @@ export function HomePage({ navigate }: HomePageProps) {
               Our Equipment Catalog
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              From diagnostics to surgery, we provide certified, well-maintained
-              equipment across all major clinical categories.
+              Certified diagnostic imaging equipment available on flexible rental terms.
             </p>
           </div>
 
-          {/* 3 Preview Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+          {/* 5 Preview Cards - 2 rows */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
             {/* Card 1 */}
             <motion.div
               whileHover={{
@@ -52,33 +51,31 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-48 overflow-hidden">
+              <div className="h-40 overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/7088828/pexels-photo-7088828.jpeg"
-                  alt="Digital X-Ray System"
+                  alt="Digital Radiography"
                   loading="lazy"
                   className="w-full h-full object-cover" />
 
               </div>
-              <div className="p-6 flex flex-col gap-3 flex-1">
-                <div className="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center">
-                  <ScanIcon className="text-[#06b6d4]" size={20} />
+              <div className="p-4 flex flex-col gap-2 flex-1">
+                <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center">
+                  <ScanIcon className="text-[#06b6d4]" size={18} />
                 </div>
                 <div>
                   <h3
-                    className="text-[#0d1b2a] font-bold text-base mb-1"
+                    className="text-[#0d1b2a] font-bold text-sm mb-1"
                     style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif"
                     }}>
 
-                    Diagnostic Imaging
+                    Digital Radiography
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    X-Ray, MRI, CT scanners, and ultrasound systems.
+                  <p className="text-gray-500 text-xs leading-relaxed">
+                    Mobile & Fixed X-Ray systems
                   </p>
                 </div>
-                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">                  
-                </p>
               </div>
             </motion.div>
 
@@ -90,33 +87,31 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-48 overflow-hidden">
+              <div className="h-40 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/939325/pexels-photo-939325.jpeg"
-                  alt="Patient Monitoring System"
+                  src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
+                  alt="Dental Imaging"
                   loading="lazy"
                   className="w-full h-full object-cover" />
 
               </div>
-              <div className="p-6 flex flex-col gap-3 flex-1">
-                <div className="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center">
-                  <ActivityIcon className="text-[#06b6d4]" size={20} />
+              <div className="p-4 flex flex-col gap-2 flex-1">
+                <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center">
+                  <ScanIcon className="text-[#06b6d4]" size={18} />
                 </div>
                 <div>
                   <h3
-                    className="text-[#0d1b2a] font-bold text-base mb-1"
+                    className="text-[#0d1b2a] font-bold text-sm mb-1"
                     style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif"
                     }}>
 
-                    Patient Monitoring
+                    Dental Imaging
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    ICU monitors, vital signs, and telemetry systems.
+                  <p className="text-gray-500 text-xs leading-relaxed">
+                    2D OPG & CBCT systems
                   </p>
                 </div>
-                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">
-                </p>
               </div>
             </motion.div>
 
@@ -128,32 +123,103 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-48 overflow-hidden">
+              <div className="h-40 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/7585026/pexels-photo-7585026.jpeg"
-                  alt="Surgical Equipment"
+                  src="https://images.pexels.com/photos/5632400/pexels-photo-5632400.jpeg"
+                  alt="CT Scanner"
+                  loading="lazy"
                   className="w-full h-full object-cover" />
 
               </div>
-              <div className="p-6 flex flex-col gap-3 flex-1">
-                <div className="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center">
-                  <StethoscopeIcon className="text-[#06b6d4]" size={20} />
+              <div className="p-4 flex flex-col gap-2 flex-1">
+                <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center">
+                  <ScanIcon className="text-[#06b6d4]" size={18} />
                 </div>
                 <div>
                   <h3
-                    className="text-[#0d1b2a] font-bold text-base mb-1"
+                    className="text-[#0d1b2a] font-bold text-sm mb-1"
                     style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif"
                     }}>
 
-                    Surgical Equipment
+                    CT Scanners
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    Operating tables, surgical lights, and laparoscopic systems.
+                  <p className="text-gray-500 text-xs leading-relaxed">
+                    32/64/128 slice systems
                   </p>
                 </div>
-                <p className="text-[#06b6d4] text-sm font-semibold mt-auto">                  
-                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 4 */}
+            <motion.div
+              whileHover={{
+                y: -6,
+                boxShadow: '0 20px 40px rgba(13,27,42,0.12)'
+              }}
+              className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
+
+              <div className="h-40 overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg"
+                  alt="MRI System"
+                  loading="lazy"
+                  className="w-full h-full object-cover" />
+
+              </div>
+              <div className="p-4 flex flex-col gap-2 flex-1">
+                <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center">
+                  <ScanIcon className="text-[#06b6d4]" size={18} />
+                </div>
+                <div>
+                  <h3
+                    className="text-[#0d1b2a] font-bold text-sm mb-1"
+                    style={{
+                      fontFamily: "'Plus Jakarta Sans', sans-serif"
+                    }}>
+
+                    MRI Systems
+                  </h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">
+                    1.5T & 3T magnetic resonance
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 5 */}
+            <motion.div
+              whileHover={{
+                y: -6,
+                boxShadow: '0 20px 40px rgba(13,27,42,0.12)'
+              }}
+              className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
+
+              <div className="h-40 overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/7974369/pexels-photo-7974369.jpeg"
+                  alt="Ultrasound System"
+                  loading="lazy"
+                  className="w-full h-full object-cover" />
+
+              </div>
+              <div className="p-4 flex flex-col gap-2 flex-1">
+                <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center">
+                  <ScanIcon className="text-[#06b6d4]" size={18} />
+                </div>
+                <div>
+                  <h3
+                    className="text-[#0d1b2a] font-bold text-sm mb-1"
+                    style={{
+                      fontFamily: "'Plus Jakarta Sans', sans-serif"
+                    }}>
+
+                    Ultrasound
+                  </h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">
+                    Diagnostic ultrasound machines
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -170,7 +236,7 @@ export function HomePage({ navigate }: HomePageProps) {
         </div>
       </section>
 
-      <WhyCodiscan />
+      <WhyKodiscan />
       <Testimonials />
       <ContactCTA />
     </div>);

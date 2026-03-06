@@ -13,7 +13,7 @@ const navLinks: { label: string; page: Page }[] = [
   { label: 'Home', page: 'home' },
   { label: 'About Us', page: 'about' },
   { label: 'Equipment Catalog', page: 'catalog' },
-  { label: 'Leasing Process', page: 'leasing' }
+  { label: 'Renting Process', page: 'renting' }
 ];
 
 export function Navbar({ currentPage, navigate }: NavbarProps) {
@@ -48,11 +48,11 @@ export function Navbar({ currentPage, navigate }: NavbarProps) {
         <button
           onClick={() => navigate('home')}
           className="flex items-center gap-3 flex-shrink-0"
-          aria-label="Codiscan home"
+          aria-label="Kodiscan home"
         >
           <img
             src={logo}
-            alt="Codiscan"
+            alt="Kodiscan"
             className="h-32 w-32 object-contain"
           />
         </button>

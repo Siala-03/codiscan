@@ -10,6 +10,7 @@ import {
   TrendingUpIcon } from
 'lucide-react';
 import { type Page } from '../App';
+import alekiImage from '../assets/aleki.jfif';
 interface AboutPageProps {
   navigate: (page: Page) => void;
 }
@@ -65,7 +66,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
               <span className="text-[#06b6d4]">Across Rwanda</span>
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              Founded in 2019, Codiscan was built on a simple belief that every
+              Founded in 2024, Kodiscan was built on a simple belief that every
               Rwandan patient deserves access to world-class diagnostic and
               treatment equipment, regardless of their facility's budget.
             </p>
@@ -113,8 +114,8 @@ export function AboutPage({ navigate }: AboutPageProps) {
                 equipment remains out of reach due to capital constraints.
               </p>
               <p className="text-gray-500 text-lg leading-relaxed mb-8">
-                Codiscan bridges this gap. By offering flexible, affordable
-                leasing plans, we enable facilities of all sizes to access the
+                Kodiscan bridges this gap. By offering flexible, affordable
+                renting plans, we enable facilities of all sizes to access the
                 same equipment used in leading hospitals worldwide — without the
                 upfront investment.
               </p>
@@ -184,7 +185,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     fontFamily: "'Plus Jakarta Sans', sans-serif"
                   }}>
 
-                  2022
+                  2024
                 </p>
                 <p className="text-gray-500 text-sm mt-1">Founded in Kigali</p>
               </div>
@@ -204,12 +205,12 @@ export function AboutPage({ navigate }: AboutPageProps) {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Impact & Vision Section */}
       <section className="bg-[#f8fafc] py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="inline-block text-[#06b6d4] text-sm font-semibold uppercase tracking-widest mb-3">
-              Our Journey
+              Impact & Vision
             </span>
             <h2
               className="text-4xl font-extrabold text-[#0d1b2a]"
@@ -217,84 +218,57 @@ export function AboutPage({ navigate }: AboutPageProps) {
                 fontFamily: "'Plus Jakarta Sans', sans-serif"
               }}>
 
-              Five Years of Impact
+              Our Impact on Healthcare
             </h2>
           </div>
-          <div className="relative">
-            <div
-              className="absolute left-8 top-0 bottom-0 w-px bg-gray-200"
-              aria-hidden="true" />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Image Placeholder */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={missionInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6 }}
+              className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
+                alt="Impact & Vision"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
 
-            <div className="flex flex-col gap-10">
-              {[
-              {
-                year: '2022',
-                title: 'Founded in Kigali',
-                desc: 'Codiscan launched with 5 equipment categories and 8 partner clinics in Kigali City.'
-              },
-              {
-                year: '2023',
-                title: 'National Expansion',
-                desc: 'Expanded to all 5 provinces of Rwanda, partnering with district hospitals and health centers.'
-              },
-              {
-                year: '2024',
-                title: 'WHO Certification',
-                desc: 'Achieved WHO-certified equipment supplier status and launched our 5-year warranty program.'
-              },
-              {
-                year: '2025',
-                title: '100 Partner Milestone',
-                desc: 'Reached 100 partner facilities and introduced our online equipment request portal.'
-              },
-              {
-                year: '2026',
-                title: 'Regional Growth',
-                desc: 'Expanded services to neighboring East African markets with 50+ equipment categories.'
-              }].
-              map((item, i) =>
-              <motion.div
-                key={item.year}
-                initial={{
-                  opacity: 0,
-                  x: -20
-                }}
-                animate={
-                missionInView ?
-                {
-                  opacity: 1,
-                  x: 0
-                } :
-                {}
-                }
-                transition={{
-                  duration: 0.5,
-                  delay: i * 0.1
-                }}
-                className="flex gap-8 items-start pl-4">
+            {/* Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={missionInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6 }}>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-[#0d1b2a] mb-3">Our Vision</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    To transform healthcare accessibility across East Africa by making essential medical equipment affordable and available to every clinic, health center, and hospital.
+                  </p>
+                </div>
 
-                  <div className="w-8 h-8 rounded-full bg-[#06b6d4] flex items-center justify-center flex-shrink-0 relative z-10 -ml-4">
-                    <div className="w-3 h-3 rounded-full bg-white" />
-                  </div>
-                  <div className="pb-2">
-                    <span className="text-[#06b6d4] text-sm font-bold">
-                      {item.year}
-                    </span>
-                    <h3
-                    className="text-[#0d1b2a] font-bold text-lg mt-0.5"
-                    style={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif"
-                    }}>
-
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed mt-1">
-                      {item.desc}
-                    </p>
-                  </div>
-                </motion.div>
-              )}
-            </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#0d1b2a] mb-3">Our Impact</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircleIcon className="text-[#06b6d4] flex-shrink-0 mt-1" size={20} />
+                      <span className="text-gray-600">Over 100 healthcare facilities equipped with modern diagnostic imaging</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircleIcon className="text-[#06b6d4] flex-shrink-0 mt-1" size={20} />
+                      <span className="text-gray-600">50,000+ patients served annually with improved diagnostic capabilities</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircleIcon className="text-[#06b6d4] flex-shrink-0 mt-1" size={20} />
+                      <span className="text-gray-600">Saving facilities $2M+ in capital expenditures through our flexible rental model</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -413,7 +387,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
             className="text-center mb-14">
 
             <span className="inline-block text-[#06b6d4] text-sm font-semibold uppercase tracking-widest mb-3">
-              The People Behind Codiscan
+              The People Behind Kodiscan
             </span>
             <h2
               className="text-4xl font-extrabold text-white"
@@ -429,7 +403,8 @@ export function AboutPage({ navigate }: AboutPageProps) {
             {
               name: 'Alex Musyoka',
               role: 'CEO & Co-Founder',
-              initials: 'EN',
+              initials: 'AM',
+              image: alekiImage,
               color: 'bg-[#06b6d4]',
               bio: 'Over 15 years of experience in healthcare technology and innovation. Previously founded Vieberg East Africa, Mitdash among others in Kenya.'
             },
@@ -437,6 +412,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
               name: 'Claudette Uwimana',
               role: 'COO',
               initials: 'CU',
+              image: null,
               color: 'bg-[#2563eb]',
               bio: 'Operations expert with deep experience in medical supply chain management.'
             },
@@ -444,6 +420,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
               name: 'Dr. Patrick Habimana',
               role: 'Chief Medical Officer',
               initials: 'PH',
+              image: null,
               color: 'bg-emerald-500',
               bio: 'Biomedical engineer and physician specializing in clinical equipment standards.'
             },
@@ -451,6 +428,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
               name: 'Aline Mukamana',
               role: 'Head of Partnerships',
               initials: 'AM',
+              image: null,
               color: 'bg-purple-500',
               bio: "Builds and maintains relationships with Rwanda's leading healthcare facilities."
             }].
@@ -475,14 +453,22 @@ export function AboutPage({ navigate }: AboutPageProps) {
               }}
               className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
 
-                <div
-                className={`w-16 h-16 rounded-2xl ${member.color} flex items-center justify-center text-white font-bold text-xl mx-auto mb-4`}
-                style={{
-                  fontFamily: "'Plus Jakarta Sans', sans-serif"
-                }}>
+                {member.image ? (
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-16 h-16 rounded-2xl object-cover mx-auto mb-4"
+                  />
+                ) : (
+                  <div
+                  className={`w-16 h-16 rounded-2xl ${member.color} flex items-center justify-center text-white font-bold text-xl mx-auto mb-4`}
+                  style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif"
+                  }}>
 
-                  {member.initials}
-                </div>
+                    {member.initials}
+                  </div>
+                )}
                 <h3
                 className="text-white font-bold text-base mb-1"
                 style={{
@@ -515,8 +501,8 @@ export function AboutPage({ navigate }: AboutPageProps) {
             Ready to partner with us?
           </h2>
           <p className="text-gray-500 mb-8">
-            Join 120+ healthcare facilities already benefiting from Codiscan's
-            equipment leasing program.
+            Join 120+ healthcare facilities already benefiting from Kodiscan's
+            equipment renting program.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

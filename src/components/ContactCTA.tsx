@@ -57,14 +57,14 @@ export function ContactCTA() {
             Your Facility?
           </h2>
           <p className="text-blue-200 text-lg sm:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-            Join 120+ healthcare facilities already benefiting from Codiscan's
-            equipment leasing program. No capital required, just better patient
+            Join 120+ healthcare facilities already benefiting from Kodiscan's
+            equipment renting program. No capital required, just better patient
             care.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="mailto:info@codiscan.rw"
+              href="mailto:info@kodiscan.rw"
               whileHover={{
                 scale: 1.04
               }}

@@ -16,12 +16,7 @@ interface CatalogPageProps {
 }
 type Category =
 'all' |
-'imaging' |
-'monitoring' |
-'surgical' |
-'laboratory' |
-'respiratory' |
-'sterilization';
+'imaging';
 interface Product {
   id: string;
   name: string;
@@ -35,298 +30,150 @@ interface Product {
 const products: Product[] = [
 // Diagnostic Imaging
 {
-  id: 'xray-dr800',
-  name: 'Digital X-Ray System DR-800',
+  id: 'digital-xray-mobile',
+  name: 'Digital Radiography (Mobile)',
   category: 'imaging',
   image:
   'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
   description:
-  'High-resolution digital radiography system with flat-panel detector for rapid, clear diagnostic images.',
+  'Portable digital radiography system for bedside and mobile radiographic imaging with high-resolution flat-panel detection.',
   specs: [
-  '17×17" flat-panel detector',
+  'Mobile platform design',
+  'Digital flat-panel detector',
   'DICOM 3.0 compatible',
-  'Wireless image transfer',
   'CE & WHO certified'],
 
   badge: 'Popular'
 },
 {
-  id: 'mri-3t',
-  name: '3T MRI Scanner ProSeries',
+  id: 'digital-xray-fixed',
+  name: 'Digital Radiography (Fixed)',
+  category: 'imaging',
+  image:
+  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
+  description:
+  'Fixed-installation digital radiography system with advanced imaging capabilities for comprehensive diagnostic radiography.',
+  specs: [
+  'Fixed installation',
+  'High-resolution detector',
+  'PACS compatible',
+  'WHO certified'],
+
+  badge: 'Popular'
+},
+{
+  id: 'dental-opg-2d',
+  name: 'Dental 2D OPG',
+  category: 'imaging',
+  image:
+  'https://images.pexels.com/photos/8352121/pexels-photo-8352121.jpeg',
+  description:
+  'Dental orthopantomographic (OPG) system for comprehensive 2D dental imaging and treatment planning.',
+  specs: [
+  '2D panoramic imaging',
+  'Digital sensor technology',
+  'Quick exposure time',
+  'Compact footprint'],
+
+  badge: 'New'
+},
+{
+  id: 'dental-cbct',
+  name: 'Dental CBCT',
+  category: 'imaging',
+  image:
+  'https://images.pexels.com/photos/8352121/pexels-photo-8352121.jpeg',
+  description:
+  'Cone Beam CT scanner for advanced 3D dental and maxillofacial imaging with high precision volumetric reconstruction.',
+  specs: [
+  '3D volumetric imaging',
+  'High-precision reconstruction',
+  'Low radiation dose',
+  'Dental-specific software'],
+
+  badge: 'New'
+},
+{
+  id: 'ct-multi-slice',
+  name: 'CT SCAN 32,64,128',
+  category: 'imaging',
+  image:
+  'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80',
+  description:
+  'Multi-detector CT scanner available in 32, 64, or 128 slice configurations for rapid whole-body scanning with exceptional image quality.',
+  specs: [
+  'Multi-slice acquisition',
+  'Fast rotation speed',
+  'Advanced reconstruction algorithms',
+  'Cardiac gating capable'],
+
+  badge: 'Popular'
+},
+{
+  id: 'mri-scanner',
+  name: 'MRI',
   category: 'imaging',
   image:
   'https://images.pexels.com/photos/13176358/pexels-photo-13176358.jpeg',
   description:
-  'High-field 3 Tesla MRI scanner delivering exceptional soft-tissue contrast for neurological and musculoskeletal imaging.',
+  'High-field MRI scanner delivering exceptional soft-tissue contrast and detailed imaging for comprehensive diagnostic evaluation.',
   specs: [
   '3 Tesla field strength',
   '60cm bore diameter',
   'Advanced noise reduction',
   'Full-body imaging capability'],
 
-  /* pricing hidden */
-},
-{
-  id: 'ultrasound-pro',
-  name: 'Portable Ultrasound ProScan',
-  category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/8352121/pexels-photo-8352121.jpeg',
-  description:
-  'Compact, cart-based ultrasound with multi-frequency probes for OB/GYN, cardiac, and abdominal imaging.',
-  specs: [
-  '15" HD touchscreen',
-  'Color Doppler imaging',
-  '4 probe ports',
-  'Battery backup 2hrs'],
-
-  badge: 'New'
-},
-{
-  id: 'ct-64slice',
-  name: '64-Slice CT Scanner',
-  category: 'imaging',
-  image:
-  'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80',
-  description:
-  'Multi-detector CT scanner with 64-slice capability for rapid whole-body scanning with low radiation dose.',
-  specs: [
-  '64-slice acquisition',
-  '0.35s rotation speed',
-  'Low-dose technology',
-  'Cardiac gating capable'],
-
-  /* pricing hidden */
-},
-// Patient Monitoring
-{
-  id: 'monitor-pm12',
-  name: 'Bedside Patient Monitor PM-12',
-  category: 'monitoring',
-  image:
-  'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg',
-  description:
-  'Comprehensive bedside monitor tracking ECG, SpO2, NIBP, temperature, and respiration with alarm management.',
-  specs: [
-  '12.1" color display',
-  'ECG, SpO2, NIBP, Temp',
-  '72-hour trend storage',
-  'Central station connectivity'],
-
-  badge: 'Popular'
-},
-{
-  id: 'central-station',
-  name: 'Central Monitoring Station',
-  category: 'monitoring',
-  image:
-  'https://images.pexels.com/photos/13697732/pexels-photo-13697732.jpeg',
-  description:
-  'Centralized monitoring hub supporting up to 16 bedside monitors with real-time waveform display and alarm routing.',
-  specs: [
-  'Monitors up to 16 beds',
-  '24" dual-screen display',
-  'EMR integration',
-  'Remote alarm notification'],
-
-  /* pricing hidden */
-},
-{
-  id: 'defibrillator-aed',
-  name: 'AED Pro Defibrillator',
-  category: 'monitoring',
-  image:
-  'https://images.pexels.com/photos/8943274/pexels-photo-8943274.jpeg',
-  description:
-  'Automated external defibrillator with real-time CPR feedback and 12-lead ECG capability for emergency response.',
-  specs: [
-  'Biphasic 200J max',
-  'CPR feedback sensor',
-  '12-lead ECG',
-  'IP55 dust/water resistant'],
-
   badge: 'Essential'
 },
-// Surgical Equipment
 {
-  id: 'op-table-ot500',
-  name: 'Electric Operating Table OT-500',
-  category: 'surgical',
+  id: 'mammography',
+  name: 'Mammography',
+  category: 'imaging',
   image:
-  'https://images.pexels.com/photos/17092745/pexels-photo-17092745.jpeg',
+  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
   description:
-  'Fully electric, multi-position operating table with carbon fiber tabletop for X-ray transparency and C-arm compatibility.',
+  'Digital mammography system for breast imaging with advanced detection capabilities and minimal radiation exposure.',
   specs: [
-  'Carbon fiber tabletop',
-  'Max load 300kg',
-  'Trendelenburg ±30°',
-  'Wireless remote control'],
-
-  /* pricing hidden */
-},
-{
-  id: 'surgical-light',
-  name: 'LED Surgical Light System',
-  category: 'surgical',
-  image:
-  'https://images.pexels.com/photos/36101262/pexels-photo-36101262.jpeg',
-  description:
-  'Ceiling-mounted dual-head LED surgical light with 160,000 lux intensity and shadow-free illumination.',
-  specs: [
-  '160,000 lux intensity',
-  'Color temperature 4,000K',
-  'Shadow-free dual head',
-  '50,000hr LED lifespan'],
-
-  badge: 'Popular'
-},
-{
-  id: 'laparoscopic-tower',
-  name: 'Laparoscopic Tower System',
-  category: 'surgical',
-  image:
-  'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80',
-  description:
-  'Complete 4K laparoscopic imaging tower with insufflator, light source, and HD monitor for minimally invasive surgery.',
-  specs: [
-  '4K UHD camera system',
-  'CO2 insufflator 40L/min',
-  '32" 4K surgical monitor',
-  'Full HD recording'],
-
-  /* pricing hidden */
-},
-// Laboratory Equipment
-{
-  id: 'hematology-ha5000',
-  name: 'Hematology Analyzer HA-5000',
-  category: 'laboratory',
-  image:
-  'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=600&q=80',
-  description:
-  'Automated 5-part differential hematology analyzer processing 80 samples/hour with comprehensive CBC reporting.',
-  specs: [
-  '80 samples/hour',
-  '5-part differential',
-  '26 parameters reported',
-  'Auto-rerun capability'],
-
-  badge: 'Popular'
-},
-{
-  id: 'pcr-realtime',
-  name: 'Real-Time PCR System',
-  category: 'laboratory',
-  image:
-  'https://images.pexels.com/photos/8940510/pexels-photo-8940510.jpeg',
-  description:
-  'High-throughput real-time PCR platform for molecular diagnostics, pathogen detection, and genetic analysis.',
-  specs: [
-  '96-well plate format',
-  '6-channel fluorescence',
-  '45-min run time',
-  'Cloud data management'],
-
-  /* pricing hidden */
-},
-{
-  id: 'centrifuge-hs',
-  name: 'High-Speed Centrifuge',
-  category: 'laboratory',
-  image:
-  'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=80',
-  description:
-  'Refrigerated high-speed centrifuge with 24,000 RPM capacity for serum, plasma, and cell separation.',
-  specs: [
-  'Max 24,000 RPM',
-  'Refrigerated -20°C to +40°C',
-  '24-position rotor',
-  'Imbalance auto-stop'],
-
-  /* pricing hidden */
-},
-// Respiratory Care
-{
-  id: 'ventilator-vp3000',
-  name: 'ICU Ventilator VentPro 3000',
-  category: 'respiratory',
-  image:
-  'https://images.pexels.com/photos/939325/pexels-photo-939325.jpeg',
-  description:
-  'Advanced ICU ventilator supporting all major ventilation modes with integrated monitoring and lung protection algorithms.',
-  specs: [
-  'Volume & pressure modes',
-  'SIMV, CPAP, BiPAP',
-  'Integrated SpO2 monitoring',
-  '4hr internal battery'],
+  'Digital display technology',
+  'Dual-energy imaging option',
+  'Low radiation protocol',
+  'CE & WHO certified'],
 
   badge: 'Essential'
 },
 {
-  id: 'cpap-bipap',
-  name: 'CPAP/BiPAP System',
-  category: 'respiratory',
+  id: 'c-arm',
+  name: 'C-Arm',
+  category: 'imaging',
   image:
-  'https://images.pexels.com/photos/8460235/pexels-photo-8460235.jpeg',
+  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
   description:
-  'Auto-titrating CPAP/BiPAP device for sleep apnea treatment and non-invasive respiratory support.',
+  'Surgical C-Arm system with real-time fluoroscopy for intraoperative imaging guidance and surgical navigation.',
   specs: [
-  'Auto-CPAP 4–20 cmH2O',
-  'Heated humidifier',
-  'Compliance data tracking',
-  'Quiet <26 dB operation'],
-
-  /* pricing hidden */
-},
-{
-  id: 'oxygen-10l',
-  name: 'Oxygen Concentrator 10L',
-  category: 'respiratory',
-  image:
-  'https://images.pexels.com/photos/9408873/pexels-photo-9408873.jpeg',
-  description:
-  'Medical-grade 10 LPM oxygen concentrator delivering 93% ±3% purity for continuous oxygen therapy.',
-  specs: [
-  '10 LPM flow rate',
-  '93% ±3% O2 purity',
-  'Low noise 48 dB',
-  'Oxygen purity alarm'],
-
-  /* pricing hidden */
-},
-// Sterilization
-{
-  id: 'autoclave-23l',
-  name: 'Class B Autoclave 23L',
-  category: 'sterilization',
-  image:
-  'https://images.pexels.com/photos/8413159/pexels-photo-8413159.jpeg',
-  description:
-  'Class B pre-vacuum autoclave with 23L chamber for sterilizing wrapped, hollow, and porous instruments.',
-  specs: [
-  '23L chamber volume',
-  'Class B pre-vacuum',
-  '134°C / 121°C cycles',
-  'Printer & USB data log'],
+  'Real-time fluoroscopy',
+  'Mobile C-arm design',
+  'Image intensifier or flat-panel option',
+  'Surgical suite compatible'],
 
   badge: 'Popular'
 },
 {
-  id: 'uvc-cabinet',
-  name: 'UV-C Sterilization Cabinet',
-  category: 'sterilization',
+  id: 'fluoroscopy',
+  name: 'Fluoroscopy',
+  category: 'imaging',
   image:
-  'https://images.pexels.com/photos/6502369/pexels-photo-6502369.jpeg',
+  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
   description:
-  'Large-capacity UV-C sterilization cabinet for rapid surface decontamination of medical instruments and devices.',
+  'Fluoroscopy system for dynamic real-time imaging of internal structures during diagnostic and interventional procedures.',
   specs: [
-  '60L storage capacity',
-  '254nm UV-C wavelength',
-  '15-min sterilization cycle',
-  'Ozone-free operation'],
+  'Real-time dynamic imaging',
+  'Continuous fluoroscopy capability',
+  'High-sensitivity detector',
+  'Cinematic recording option'],
 
-  /* pricing hidden */
-}];
+  badge: 'Essential'
+},
+];
 
 const categories: {
   id: Category;
@@ -342,31 +189,6 @@ const categories: {
   id: 'imaging',
   label: 'Diagnostic Imaging',
   icon: ScanIcon
-},
-{
-  id: 'monitoring',
-  label: 'Patient Monitoring',
-  icon: ActivityIcon
-},
-{
-  id: 'surgical',
-  label: 'Surgical',
-  icon: StethoscopeIcon
-},
-{
-  id: 'laboratory',
-  label: 'Laboratory',
-  icon: FlaskConicalIcon
-},
-{
-  id: 'respiratory',
-  label: 'Respiratory',
-  icon: WindIcon
-},
-{
-  id: 'sterilization',
-  label: 'Sterilization',
-  icon: ShieldIcon
 }];
 
 const badgeColors: Record<string, string> = {
@@ -411,7 +233,7 @@ export function CatalogPage({ navigate }: CatalogPageProps) {
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl">
               Browse our complete range of WHO & CE certified medical equipment
-              available for flexible leasing. All equipment includes
+              available for flexible renting. All equipment includes
               installation, training, and ongoing support.
             </p>
           </motion.div>

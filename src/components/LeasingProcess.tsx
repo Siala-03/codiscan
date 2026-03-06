@@ -79,7 +79,7 @@ export function LeasingProcess() {
               fontFamily: "'Plus Jakarta Sans', sans-serif"
             }}>
 
-            How Our Leasing Process Works
+            How Our Renting Process Works
           </h2>
         </motion.div>
 

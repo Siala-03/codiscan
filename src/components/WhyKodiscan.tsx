@@ -54,7 +54,7 @@ export function WhyKodiscan() {
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-8">
               We believe every Rwandan healthcare facility deserves access to
-              world-class medical equipment. Our leasing model removes financial
+              world-class medical equipment. Our renting model removes financial
               barriers, enabling clinics and hospitals of all sizes to deliver
               exceptional patient care from day one.
             </p>
@@ -130,7 +130,7 @@ export function WhyKodiscan() {
                   Zero Capital Outlay
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Lease instead of buy. Preserve your capital for patient care
+                  Rent instead of buy. Preserve your capital for patient care
                   while accessing premium equipment from day one.
                 </p>
               </div>
@@ -193,7 +193,7 @@ export function WhyKodiscan() {
                   Flexible Terms
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Choose from 12 to 60-month leasing plans tailored to your
+                  Choose from 12 to 60-month renting plans tailored to your
                   facility's budget and operational requirements.
                 </p>
               </div>

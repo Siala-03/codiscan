@@ -27,7 +27,7 @@ export function Footer({ navigate }: FooterProps) {
               {/* logo image - use file placed in dist/assets */}
             <img
               src={logo}
-              alt="Codiscan"
+              alt="Kodiscan"
               loading="lazy"
               className="w-32 h-32 rounded-lg" />
               <span
@@ -39,7 +39,7 @@ export function Footer({ navigate }: FooterProps) {
             </button>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Advancing Rwanda's healthcare infrastructure through accessible,
-              certified medical equipment leasing.
+              certified medical equipment renting.
             </p>
           </div>
 
@@ -80,10 +80,10 @@ export function Footer({ navigate }: FooterProps) {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('leasing')}
+                  onClick={() => navigate('renting')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Leasing Process
+                  Renting Process
                 </button>
               </li>
               <li>
@@ -179,10 +179,10 @@ export function Footer({ navigate }: FooterProps) {
                   aria-hidden="true" />
 
                 <a
-                  href="mailto:info@codiscan.rw"
+                  href="mailto:info@kodiscan.rw"
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors">
 
-                  info@codiscan.rw
+                  info@kodiscan.rw
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -205,14 +205,14 @@ export function Footer({ navigate }: FooterProps) {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Codiscan. All rights reserved.
+            © {new Date().getFullYear()} Kodiscan. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Codiscan on Twitter"
+              aria-label="Kodiscan on Twitter"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#06b6d4] hover:bg-white/10 transition-colors">
 
               <TwitterIcon size={16} />
@@ -221,7 +221,7 @@ export function Footer({ navigate }: FooterProps) {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Codiscan on LinkedIn"
+              aria-label="Kodiscan on LinkedIn"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#06b6d4] hover:bg-white/10 transition-colors">
 
               <LinkedinIcon size={16} />
@@ -230,7 +230,7 @@ export function Footer({ navigate }: FooterProps) {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Codiscan on Facebook"
+              aria-label="Kodiscan on Facebook"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#06b6d4] hover:bg-white/10 transition-colors">
 
               <FacebookIcon size={16} />

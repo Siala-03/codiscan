@@ -4,9 +4,9 @@ import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { CatalogPage } from './pages/CatalogPage';
 import { AboutPage } from './pages/AboutPage';
-import { LeasingProcessPage } from './pages/LeasingProcessPage';
+import { RentingProcessPage } from './pages/RentingProcessPage';
 import { ContactPage } from './pages/ContactPage';
-export type Page = 'home' | 'catalog' | 'about' | 'leasing' | 'contact';
+export type Page = 'home' | 'catalog' | 'about' | 'renting' | 'contact';
 export function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
   const navigate = (page: Page) => {
@@ -28,8 +28,8 @@ export function App() {
         {currentPage === 'home' && <HomePage navigate={navigate} />}
         {currentPage === 'catalog' && <CatalogPage navigate={navigate} />}
         {currentPage === 'about' && <AboutPage navigate={navigate} />}
-        {currentPage === 'leasing' &&
-        <LeasingProcessPage navigate={navigate} />
+        {currentPage === 'renting' &&
+        <RentingProcessPage navigate={navigate} />
         }
         {currentPage === 'contact' && <ContactPage navigate={navigate} />}
       </main>

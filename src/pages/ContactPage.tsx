@@ -132,10 +132,10 @@ export function ContactPage({ navigate }: ContactPageProps) {
                   Email Us
                 </p>
                 <a
-                  href="mailto:info@codiscan.rw"
+                  href="mailto:info@kodiscan.rw"
                   className="text-gray-500 text-sm hover:text-[#06b6d4] transition-colors">
 
-                  info@codiscan.rw
+                  info@kodiscan.rw
                 </a>
               </div>
             </div>
@@ -511,7 +511,7 @@ export function ContactPage({ navigate }: ContactPageProps) {
                     fontFamily: "'Plus Jakarta Sans', sans-serif"
                   }}>
 
-                  Why facilities trust Codiscan
+                  Why facilities trust Kodiscan
                 </p>
                 <div className="flex flex-col gap-3">
                   {[
@@ -519,7 +519,7 @@ export function ContactPage({ navigate }: ContactPageProps) {
                   'No hidden fees or surprise charges',
                   '5-year warranty on all equipment',
                   '48-hour delivery guarantee',
-                  'Codiscan-based support team'].
+                  'Kodiscan-based support team'].
                   map((item) =>
                   <div key={item} className="flex items-center gap-2.5">
                       <CheckCircleIcon

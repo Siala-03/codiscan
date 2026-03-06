@@ -8,19 +8,19 @@ interface StatItem {
 }
 const stats: StatItem[] = [
 {
-  value: '50+',
-  numericValue: 50,
+  value: '10+',
+  numericValue: 10,
   suffix: '+',
   label: 'Equipment Types'
 },
 {
-  value: '120+',
-  numericValue: 120,
+  value: '20+',
+  numericValue: 20,
   suffix: '+',
   label: 'Partner Clinics'
 },
 {
-  value: '5-Year',
+  value: '3-Year',
   numericValue: 5,
   suffix: '-Year',
   label: 'Warranty Support'

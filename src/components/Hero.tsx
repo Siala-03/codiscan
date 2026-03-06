@@ -57,7 +57,7 @@ export function Hero() {
                 className="w-2 h-2 rounded-full bg-[#06b6d4] animate-pulse"
                 aria-hidden="true" />
 
-              Elevating Rwandan Healthcare
+              Affordable access to life-saving medical equipment
             </span>
           </motion.div>
 

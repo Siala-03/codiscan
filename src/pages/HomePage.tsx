@@ -53,7 +53,7 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-40 overflow-hidden">
+              <div className="h-60 overflow-hidden">
                 <img
                   src={mobileRImage}
                   alt="Digital Radiography Mobile"
@@ -89,7 +89,7 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-40 overflow-hidden">
+              <div className="h-60 overflow-hidden">
                 <img
                   src={cbctImage}
                   alt="Dental CBCT"
@@ -125,7 +125,7 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-40 overflow-hidden">
+              <div className="h-60 overflow-hidden">
                 <img
                   src={ctScanImage}
                   alt="CT Scanner"
@@ -161,7 +161,7 @@ export function HomePage({ navigate }: HomePageProps) {
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
 
-              <div className="h-40 overflow-hidden">
+              <div className="h-60 overflow-hidden">
                 <img
                   src={mriImage}
                   alt="MRI System"

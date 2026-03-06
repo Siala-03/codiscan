@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   ArrowRightIcon,
-  ScanIcon,
-  ActivityIcon,
-  StethoscopeIcon } from
+  ScanIcon } from
 'lucide-react';
+const mobileRImage = new URL('../assets/mobile_r.PNG', import.meta.url).href;
+const cbctImage = new URL('../assets/cbct.jpg', import.meta.url).href;
+const ctScanImage = new URL('../assets/ct_scan.png', import.meta.url).href;
+const mriImage = new URL('../assets/mri.jpg', import.meta.url).href;
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
 import { WhyKodiscan } from '../components/WhyKodiscan';
@@ -41,9 +43,9 @@ export function HomePage({ navigate }: HomePageProps) {
             </p>
           </div>
 
-          {/* 5 Preview Cards - 2 rows */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
-            {/* Card 1 */}
+          {/* 4 Preview Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            {/* Card 1 - Digital Radiography Mobile */}
             <motion.div
               whileHover={{
                 y: -6,
@@ -53,8 +55,8 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-40 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/7088828/pexels-photo-7088828.jpeg"
-                  alt="Digital Radiography"
+                  src={mobileRImage}
+                  alt="Digital Radiography Mobile"
                   loading="lazy"
                   className="w-full h-full object-cover" />
 
@@ -73,13 +75,13 @@ export function HomePage({ navigate }: HomePageProps) {
                     Digital Radiography
                   </h3>
                   <p className="text-gray-500 text-xs leading-relaxed">
-                    Mobile & Fixed X-Ray systems
+                    Mobile X-Ray systems
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Card 2 */}
+            {/* Card 2 - Dental CBCT */}
             <motion.div
               whileHover={{
                 y: -6,
@@ -89,8 +91,8 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-40 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
-                  alt="Dental Imaging"
+                  src={cbctImage}
+                  alt="Dental CBCT"
                   loading="lazy"
                   className="w-full h-full object-cover" />
 
@@ -106,16 +108,16 @@ export function HomePage({ navigate }: HomePageProps) {
                       fontFamily: "'Plus Jakarta Sans', sans-serif"
                     }}>
 
-                    Dental Imaging
+                    Dental CBCT
                   </h3>
                   <p className="text-gray-500 text-xs leading-relaxed">
-                    2D OPG & CBCT systems
+                    3D dental imaging
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Card 3 */}
+            {/* Card 3 - CT Scanner */}
             <motion.div
               whileHover={{
                 y: -6,
@@ -125,7 +127,7 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-40 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/5632400/pexels-photo-5632400.jpeg"
+                  src={ctScanImage}
                   alt="CT Scanner"
                   loading="lazy"
                   className="w-full h-full object-cover" />
@@ -151,7 +153,7 @@ export function HomePage({ navigate }: HomePageProps) {
               </div>
             </motion.div>
 
-            {/* Card 4 */}
+            {/* Card 4 - MRI */}
             <motion.div
               whileHover={{
                 y: -6,
@@ -161,7 +163,7 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-40 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg"
+                  src={mriImage}
                   alt="MRI System"
                   loading="lazy"
                   className="w-full h-full object-cover" />
@@ -182,42 +184,6 @@ export function HomePage({ navigate }: HomePageProps) {
                   </h3>
                   <p className="text-gray-500 text-xs leading-relaxed">
                     1.5T & 3T magnetic resonance
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Card 5 */}
-            <motion.div
-              whileHover={{
-                y: -6,
-                boxShadow: '0 20px 40px rgba(13,27,42,0.12)'
-              }}
-              className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col">
-
-              <div className="h-40 overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/7974369/pexels-photo-7974369.jpeg"
-                  alt="Ultrasound System"
-                  loading="lazy"
-                  className="w-full h-full object-cover" />
-
-              </div>
-              <div className="p-4 flex flex-col gap-2 flex-1">
-                <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center">
-                  <ScanIcon className="text-[#06b6d4]" size={18} />
-                </div>
-                <div>
-                  <h3
-                    className="text-[#0d1b2a] font-bold text-sm mb-1"
-                    style={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif"
-                    }}>
-
-                    Ultrasound
-                  </h3>
-                  <p className="text-gray-500 text-xs leading-relaxed">
-                    Diagnostic ultrasound machines
                   </p>
                 </div>
               </div>

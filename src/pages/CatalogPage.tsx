@@ -3,13 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRightIcon,
   ScanIcon,
-  ActivityIcon,
-  StethoscopeIcon,
-  FlaskConicalIcon,
-  WindIcon,
-  ShieldIcon,
   TagIcon } from
 'lucide-react';
+const mobileRImage = new URL('../assets/mobile_r.PNG', import.meta.url).href;
+const radioFImage = new URL('../assets/radio_f.jpg', import.meta.url).href;
+const dental2dImage = new URL('../assets/dental 2d.png', import.meta.url).href;
+const cbctImage = new URL('../assets/cbct.jpg', import.meta.url).href;
+const ctScanImage = new URL('../assets/ct_scan.png', import.meta.url).href;
+const mriImage = new URL('../assets/mri.jpg', import.meta.url).href;
+const mammoImage = new URL('../assets/mammo.png', import.meta.url).href;
+const cArmImage = new URL('../assets/c-arm.jpg', import.meta.url).href;
+const fluoroscopyImage = new URL('../assets/flouroscopy.jpg', import.meta.url).href;
 import { type Page } from '../App';
 interface CatalogPageProps {
   navigate: (page: Page) => void;
@@ -33,8 +37,7 @@ const products: Product[] = [
   id: 'digital-xray-mobile',
   name: 'Digital Radiography (Mobile)',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
+  image: mobileRImage,
   description:
   'Portable digital radiography system for bedside and mobile radiographic imaging with high-resolution flat-panel detection.',
   specs: [
@@ -49,8 +52,7 @@ const products: Product[] = [
   id: 'digital-xray-fixed',
   name: 'Digital Radiography (Fixed)',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
+  image: radioFImage,
   description:
   'Fixed-installation digital radiography system with advanced imaging capabilities for comprehensive diagnostic radiography.',
   specs: [
@@ -65,8 +67,7 @@ const products: Product[] = [
   id: 'dental-opg-2d',
   name: 'Dental 2D OPG',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/8352121/pexels-photo-8352121.jpeg',
+  image: dental2dImage,
   description:
   'Dental orthopantomographic (OPG) system for comprehensive 2D dental imaging and treatment planning.',
   specs: [
@@ -81,8 +82,7 @@ const products: Product[] = [
   id: 'dental-cbct',
   name: 'Dental CBCT',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/8352121/pexels-photo-8352121.jpeg',
+  image: cbctImage,
   description:
   'Cone Beam CT scanner for advanced 3D dental and maxillofacial imaging with high precision volumetric reconstruction.',
   specs: [
@@ -97,8 +97,7 @@ const products: Product[] = [
   id: 'ct-multi-slice',
   name: 'CT SCAN 32,64,128',
   category: 'imaging',
-  image:
-  'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80',
+  image: ctScanImage,
   description:
   'Multi-detector CT scanner available in 32, 64, or 128 slice configurations for rapid whole-body scanning with exceptional image quality.',
   specs: [
@@ -113,8 +112,7 @@ const products: Product[] = [
   id: 'mri-scanner',
   name: 'MRI',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/13176358/pexels-photo-13176358.jpeg',
+  image: mriImage,
   description:
   'High-field MRI scanner delivering exceptional soft-tissue contrast and detailed imaging for comprehensive diagnostic evaluation.',
   specs: [
@@ -129,8 +127,7 @@ const products: Product[] = [
   id: 'mammography',
   name: 'Mammography',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
+  image: mammoImage,
   description:
   'Digital mammography system for breast imaging with advanced detection capabilities and minimal radiation exposure.',
   specs: [
@@ -145,8 +142,7 @@ const products: Product[] = [
   id: 'c-arm',
   name: 'C-Arm',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
+  image: cArmImage,
   description:
   'Surgical C-Arm system with real-time fluoroscopy for intraoperative imaging guidance and surgical navigation.',
   specs: [
@@ -161,8 +157,7 @@ const products: Product[] = [
   id: 'fluoroscopy',
   name: 'Fluoroscopy',
   category: 'imaging',
-  image:
-  'https://images.pexels.com/photos/6501862/pexels-photo-6501862.jpeg',
+  image: fluoroscopyImage,
   description:
   'Fluoroscopy system for dynamic real-time imaging of internal structures during diagnostic and interventional procedures.',
   specs: [

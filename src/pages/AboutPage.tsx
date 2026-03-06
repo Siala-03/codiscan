@@ -230,7 +230,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
               transition={{ duration: 0.6 }}
               className="rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
+                src="https://images.pexels.com/photos/11288654/pexels-photo-11288654.jpeg"
                 alt="Impact & Vision"
                 className="w-full h-full object-cover"
               />
@@ -398,7 +398,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
               Our Leadership Team
             </h2>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 lg:max-w-sm lg:mx-auto gap-6">
             {[
             {
               name: 'Alex Musyoka',
@@ -407,32 +407,8 @@ export function AboutPage({ navigate }: AboutPageProps) {
               image: alekiImage,
               color: 'bg-[#06b6d4]',
               bio: 'Over 15 years of experience in healthcare technology and innovation. Previously founded Vieberg East Africa, Mitdash among others in Kenya.'
-            },
-            {
-              name: 'Claudette Uwimana',
-              role: 'COO',
-              initials: 'CU',
-              image: null,
-              color: 'bg-[#2563eb]',
-              bio: 'Operations expert with deep experience in medical supply chain management.'
-            },
-            {
-              name: 'Dr. Patrick Habimana',
-              role: 'Chief Medical Officer',
-              initials: 'PH',
-              image: null,
-              color: 'bg-emerald-500',
-              bio: 'Biomedical engineer and physician specializing in clinical equipment standards.'
-            },
-            {
-              name: 'Aline Mukamana',
-              role: 'Head of Partnerships',
-              initials: 'AM',
-              image: null,
-              color: 'bg-purple-500',
-              bio: "Builds and maintains relationships with Rwanda's leading healthcare facilities."
-            }].
-            map((member, i) =>
+            }
+            ].map((member, i) =>
             <motion.div
               key={member.name}
               initial={{

@@ -126,7 +126,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     size={20} />
 
                   <span className="text-gray-700 font-medium">
-                    120+ partner facilities across all provinces
+                    20+ partner facilities across all provinces
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -135,7 +135,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     size={20} />
 
                   <span className="text-gray-700 font-medium">
-                    50+ equipment categories, all WHO & CE certified
+                    10+ equipment categories, all WHO & CE certified
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -196,7 +196,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     fontFamily: "'Plus Jakarta Sans', sans-serif"
                   }}>
 
-                  120+
+                  20+
                 </p>
                 <p className="text-white/80 text-sm mt-1">Partner Clinics</p>
               </div>

@@ -121,7 +121,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Patient Monitoring
+                  Dental Imaging
                 </button>
               </li>
               <li>
@@ -129,7 +129,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Surgical Equipment
+                  CT & MRI
                 </button>
               </li>
               <li>
@@ -137,7 +137,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Laboratory Equipment
+                  Mammography
                 </button>
               </li>
               <li>
@@ -145,7 +145,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Respiratory Care
+                  C-Arm & Fluoroscopy
                 </button>
               </li>
             </ul>

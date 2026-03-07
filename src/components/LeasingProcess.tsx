@@ -26,7 +26,7 @@ const steps = [
   icon: FileSignatureIcon,
   title: 'Agreement & Delivery',
   description:
-  'Sign your flexible lease agreement and receive your equipment within 48 hours, fully installed and tested.'
+  'Sign your flexible lease agreement. We respond within 24 hours, with equipment arrivals typically within 30 days due to sea imports, then fully installed and tested.'
 },
 {
   number: '04',

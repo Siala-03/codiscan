@@ -57,7 +57,7 @@ export function ContactCTA() {
             Your Facility?
           </h2>
           <p className="text-blue-200 text-lg sm:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-            Join 120+ healthcare facilities already benefiting from Kodiscan's
+            Join 20+ healthcare facilities already benefiting from Kodiscan's
             equipment renting program. No capital required, just better patient
             care.
           </p>

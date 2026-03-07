@@ -27,9 +27,9 @@ const stats: StatItem[] = [
 },
 {
   value: '24hr',
-  numericValue: 48,
+  numericValue: 24,
   suffix: 'hr',
-  label: 'Delivery'
+  label: 'Response Time'
 }];
 
 function CountUp({

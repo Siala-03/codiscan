@@ -45,12 +45,12 @@ const steps = [
   icon: FileSignatureIcon,
   title: 'Agreement & Delivery',
   description:
-  'Sign your flexible lease agreement with transparent terms — no hidden fees. Equipment is delivered, installed, and tested within 48 hours of signing.',
+  'Sign your flexible lease agreement with transparent terms — no hidden fees. Our team responds within 24 hours; most equipment arrives within 30 days due to sea imports and is then installed and tested promptly.',
   details: [
   '12–60 month flexible terms',
   'Fixed monthly payments',
-  'Professional installation included',
-  'Staff training on day of delivery']
+  'Professional installation & testing included',
+  'Staff training provided upon delivery']
 
 },
 {
@@ -60,7 +60,7 @@ const steps = [
   description:
   'Your lease includes comprehensive support throughout the entire term. Our Codiscan-based technicians are available 24/7 for emergencies.',
   details: [
-  '5-year warranty on all equipment',
+  'Machine lifetime support',
   'Scheduled preventive maintenance',
   '24/7 emergency technical support',
   'Free equipment upgrades available']
@@ -78,7 +78,7 @@ const faqs = [
 },
 {
   q: 'What happens if equipment breaks down?',
-  a: 'All leased equipment is covered by our lifetime support program. In the event of a breakdown, our Kigali-based technicians will respond within 24 hours. We provide a replacement unit if repairs take longer than 48 hours.'
+  a: 'All leased equipment is covered by our lifetime support program. In the event of a breakdown, our Kigali-based technicians will respond within 24 hours. We provide a replacement unit if repairs take longer than 24 hours.'
 },
 {
   q: 'Can I upgrade equipment during the lease?',
@@ -149,9 +149,7 @@ export function LeasingProcessPage({ navigate }: LeasingProcessPageProps) {
               <span className="text-[#06b6d4]">Process Works</span>
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              From application to delivery in as little as 72 hours. Our
-              streamlined process is designed to get your facility equipped and
-              operational as quickly as possible.
+              Application response within 24 hours. With most products imported by sea, delivery is completed within 30 days. Our streamlined process ensures your facility is equipped efficiently.
             </p>
           </motion.div>
         </div>
@@ -489,7 +487,7 @@ export function LeasingProcessPage({ navigate }: LeasingProcessPageProps) {
             Ready to get started?
           </h2>
           <p className="text-gray-400 mb-8">
-            Submit your application today and get equipped within 72 hours.
+            Submit your application today. We respond within 24 hours, with equipment delivery and installation within 30 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

@@ -144,7 +144,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     size={20} />
 
                   <span className="text-gray-700 font-medium">
-                    Kigali-based support team, 24hr delivery guarantee
+                    Kigali-based support team, 30 day delivery guarantee
                   </span>
                 </div>
               </div>
@@ -477,7 +477,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
             Ready to partner with us?
           </h2>
           <p className="text-gray-500 mb-8">
-            Join 120+ healthcare facilities already benefiting from Kodiscan's
+            Join 20+ healthcare facilities already benefiting from Kodiscan's
             equipment renting program.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

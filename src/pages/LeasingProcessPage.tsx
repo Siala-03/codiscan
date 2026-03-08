@@ -58,7 +58,7 @@ const steps = [
   icon: HeadphonesIcon,
   title: 'Ongoing Support',
   description:
-  'Your lease includes comprehensive support throughout the entire term. Our Codiscan-based technicians are available 24/7 for emergencies.',
+  'Your lease includes comprehensive support throughout the entire term. Our Kodiscan-based technicians are available 24/7 for emergencies.',
   details: [
   'Machine lifetime support',
   'Scheduled preventive maintenance',
@@ -86,7 +86,7 @@ const faqs = [
 },
 {
   q: 'Who handles installation and training?',
-  a: 'Codiscan handles all installation at no additional cost. Our certified biomedical technicians install and commission the equipment, and provide hands-on training for your clinical staff on the day of delivery.'
+  a: 'Kodiscan handles all installation at no additional cost. Our certified biomedical technicians install and commission the equipment, and provide hands-on training for your clinical staff on the day of delivery.'
 },
 {
   q: 'What certifications does your equipment carry?',

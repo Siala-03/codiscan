@@ -66,9 +66,10 @@ export function AboutPage({ navigate }: AboutPageProps) {
               <span className="text-[#06b6d4]">Across Rwanda</span>
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              Founded in 2024, Kodiscan was built on a simple belief that every
-              Rwandan patient deserves access to world-class diagnostic and
-              treatment equipment, regardless of their facility's budget.
+              Founded in 2024 by a team with 15+ years of medical equipment
+              industry experience, Kodiscan was built on a simple belief that
+              every Rwandan patient deserves access to world-class diagnostic
+              and treatment equipment, regardless of their facility's budget.
             </p>
           </motion.div>
         </div>
@@ -126,7 +127,7 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     size={20} />
 
                   <span className="text-gray-700 font-medium">
-                    20+ partner facilities across all provinces
+                    15+ years of medical equipment industry experience
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -196,9 +197,9 @@ export function AboutPage({ navigate }: AboutPageProps) {
                     fontFamily: "'Plus Jakarta Sans', sans-serif"
                   }}>
 
-                  20+
+                  15+
                 </p>
-                <p className="text-white/80 text-sm mt-1">Partner Clinics</p>
+                <p className="text-white/80 text-sm mt-1">Years Industry Experience</p>
               </div>
             </motion.div>
           </div>

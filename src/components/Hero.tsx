@@ -22,7 +22,11 @@ const itemVariants = {
     }
   }
 };
-export function Hero() {
+interface HeroProps {
+  navigate: () => void;
+}
+
+export function Hero({ navigate }: HeroProps) {
   return (
     <section
       id="home"
@@ -71,7 +75,7 @@ export function Hero() {
 
             <span className="text-white">Advanced Medical</span>
             <br />
-            <span className="text-[#06b6d4]">Equipment Renting</span>
+            <span className="text-[#06b6d4]">Equipment Rental</span>
             <br />
             <span className="text-white">for Clinical Facilities.</span>
           </motion.h1>
@@ -81,19 +85,19 @@ export function Hero() {
             variants={itemVariants}
             className="text-gray-300 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl">
 
-            Access state-of-the-art diagnostic, surgical, and monitoring
+            Access state-of-the-art diagnostic, surgical and monitoring
             equipment without the massive capital expenditure. Partner with
             Kodiscan today.
           </motion.p>
 
           {/* CTAs */}
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
-            <a
-              href="#catalog"
+            <button
+              onClick={navigate}
               className="inline-flex items-center px-7 py-3.5 rounded-full bg-[#06b6d4] text-white font-semibold text-base hover:bg-cyan-400 transition-colors duration-200 shadow-lg shadow-cyan-500/25">
 
               Browse Catalog
-            </a>
+            </button>
             <a
               href="#contact"
               className="inline-flex items-center px-7 py-3.5 rounded-full border-2 border-white/60 text-white font-semibold text-base hover:bg-white/10 transition-colors duration-200">

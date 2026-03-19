@@ -20,13 +20,13 @@ interface HomePageProps {
 export function HomePage({ navigate }: HomePageProps) {
   return (
     <div>
-      <Hero />
+      <Hero navigate={() => navigate('catalog')} />
       <StatsBar />
 
       {/* Equipment Preview Section */}
       <section className="w-full bg-[#f8fafc] py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div id="catalog" className="text-center mb-14">
             <span className="inline-block text-[#06b6d4] text-sm font-semibold uppercase tracking-widest mb-3">
               What We Offer
             </span>

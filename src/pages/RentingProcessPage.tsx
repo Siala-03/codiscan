@@ -74,11 +74,11 @@ const faqs = [
 },
 {
   q: 'Is there a down payment required?',
-  a: 'No upfront capital is required for most equipment categories. Some high-value equipment (e.g., MRI scanners) may require a small security deposit, which is fully refundable at the end of the rent term.'
+  a: 'A down payment is not always required. It depends on the equipment type, rental period, and your facility credit profile. We are always open to discussion and can structure terms to fit your needs.'
 },
 {
   q: 'What happens if equipment breaks down?',
-  a: 'All rented equipment is covered by our lifetime support program. In the event of a breakdown, our Kigali-based technicians will respond within 24 hours. We provide a replacement unit if repairs take longer than 24 hours.'
+  a: 'We provide 24/7 support and our technicians respond quickly, usually within 24 hours. If your unit cannot be repaired promptly, we work to provide a suitable replacement as soon as possible to minimize disruption.'
 },
 {
   q: 'Can I upgrade equipment during the rent?',
@@ -97,8 +97,8 @@ const faqs = [
   a: 'Absolutely. We work with public district hospitals, private clinics, NGO-funded health centers, and faith-based health facilities. We have experience navigating government procurement processes and can assist with documentation.'
 },
 {
-  q: 'What happens at the end of the rent?',
-  a: "At rent end, you have three options: return the equipment, renew the rent (often at a reduced rate), or purchase the equipment at its residual value. We'll contact you 90 days before expiry to discuss your preference."
+  q: 'What happens at the end of the rental period?',
+  a: "At the end of the rental period, you can return the equipment, renew your term, or purchase at residual value. We'll contact you 90 days before expiry to plan the best path for your facility."
 }];
 
 export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
@@ -291,7 +291,7 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Higher monthly rate
+                  Competitive shorter-term pricing
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
@@ -322,7 +322,7 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Reduced monthly rate
+                  Strong value for growing clinics
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
@@ -346,7 +346,7 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
               <ul className="text-left flex flex-col gap-2 text-sm text-gray-600">
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Lowest monthly rate
+                  Lowest long-term monthly rate
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />

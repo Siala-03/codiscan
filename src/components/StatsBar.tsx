@@ -14,10 +14,10 @@ const stats: StatItem[] = [
   label: 'Equipment Types'
 },
 {
-  value: '20+',
-  numericValue: 20,
+  value: '15+',
+  numericValue: 15,
   suffix: '+',
-  label: 'Partner Clinics'
+  label: 'Years Industry Experience'
 },
 {
   value: 'Support',

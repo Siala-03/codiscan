@@ -11,7 +11,6 @@ const mriImage = new URL('../assets/mri.jpg', import.meta.url).href;
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
 import { WhyKodiscan } from '../components/WhyKodiscan';
-import { Testimonials } from '../components/Testimonials';
 import { ContactCTA } from '../components/ContactCTA';
 import { type Page } from '../App';
 interface HomePageProps {
@@ -203,7 +202,6 @@ export function HomePage({ navigate }: HomePageProps) {
       </section>
 
       <WhyKodiscan />
-      <Testimonials />
       <ContactCTA />
     </div>);
 

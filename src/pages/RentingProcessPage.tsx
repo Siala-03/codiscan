@@ -360,6 +360,11 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
             </div>
           </div>
         </div>
+        <div className="mt-8 text-center">
+          <p className="text-sm text-gray-500 bg-gray-50 inline-block px-4 py-2 rounded-lg">
+            * All rental plans feature a <span className="font-semibold text-[#0d1b2a]">percentage-based revenue share model</span>. Payments are calculated based on the equipment's generated revenue.
+          </p>
+        </div>
       </section>
 
       {/* FAQ */}

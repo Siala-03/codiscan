@@ -10,23 +10,17 @@ import {
   TrendingUpIcon } from
 'lucide-react';
 import { type Page } from '../App';
-import alekiImage from '../assets/aleki.jfif';
 interface AboutPageProps {
   navigate: (page: Page) => void;
 }
 export function AboutPage({ navigate }: AboutPageProps) {
   const missionRef = useRef<HTMLDivElement>(null);
   const valuesRef = useRef<HTMLDivElement>(null);
-  const teamRef = useRef<HTMLDivElement>(null);
   const missionInView = useInView(missionRef, {
     once: true,
     margin: '-80px'
   });
   const valuesInView = useInView(valuesRef, {
-    once: true,
-    margin: '-80px'
-  });
-  const teamInView = useInView(teamRef, {
     once: true,
     margin: '-80px'
   });
@@ -362,106 +356,6 @@ export function AboutPage({ navigate }: AboutPageProps) {
                 </motion.div>);
 
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="bg-[#0d1b2a] py-20 lg:py-28" ref={teamRef}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 24
-            }}
-            animate={
-            teamInView ?
-            {
-              opacity: 1,
-              y: 0
-            } :
-            {}
-            }
-            transition={{
-              duration: 0.6
-            }}
-            className="text-center mb-14">
-
-            <span className="inline-block text-[#06b6d4] text-sm font-semibold uppercase tracking-widest mb-3">
-              The People Behind Kodiscan
-            </span>
-            <h2
-              className="text-4xl font-extrabold text-white"
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif"
-              }}>
-
-              Our Leadership Team
-            </h2>
-          </motion.div>
-          <div className="grid grid-cols-1 lg:max-w-sm lg:mx-auto gap-6">
-            {[
-            {
-              name: 'Alex Musyoka',
-              role: 'CEO & Co-Founder',
-              initials: 'AM',
-              image: alekiImage,
-              color: 'bg-[#06b6d4]',
-              bio: 'Over 15 years of experience in healthcare technology and innovation. Previously founded Vieberg East Africa, Mitdash among others in Kenya.'
-            }
-            ].map((member, i) =>
-            <motion.div
-              key={member.name}
-              initial={{
-                opacity: 0,
-                y: 24
-              }}
-              animate={
-              teamInView ?
-              {
-                opacity: 1,
-                y: 0
-              } :
-              {}
-              }
-              transition={{
-                duration: 0.5,
-                delay: i * 0.1
-              }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-
-                {member.image ? (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-16 h-16 rounded-2xl object-cover mx-auto mb-4"
-                  />
-                ) : (
-                  <div
-                  className={`w-16 h-16 rounded-2xl ${member.color} flex items-center justify-center text-white font-bold text-xl mx-auto mb-4`}
-                  style={{
-                    fontFamily: "'Plus Jakarta Sans', sans-serif"
-                  }}>
-
-                    {member.initials}
-                  </div>
-                )}
-                <h3
-                className="text-white font-bold text-base mb-1"
-                style={{
-                  fontFamily: "'Plus Jakarta Sans', sans-serif"
-                }}>
-
-                  {member.name}
-                </h3>
-                <p className="text-[#06b6d4] text-sm font-semibold mb-3">
-                  {member.role}
-                </p>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {member.bio}
-                </p>
-              </motion.div>
-            )}
           </div>
         </div>
       </section>

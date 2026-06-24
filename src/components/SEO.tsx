@@ -86,7 +86,7 @@ export function SEO({ title, description, canonical, url, image }: SEOProps) {
         '@type': 'ContactPoint',
         contactType: 'Customer Service',
         telephone: '+250-XXX-XXX-XXX',
-        email: 'info@kodiscan.com'
+        email: 'kodiscan08@gmail.com'
       }
     });
   }, [title, description, canonical, url, image]);

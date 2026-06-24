@@ -179,10 +179,10 @@ export function Footer({ navigate }: FooterProps) {
                   aria-hidden="true" />
 
                 <a
-                  href="mailto:info@kodiscan.rw"
+                  href="mailto:kodiscan08@gmail.com"
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors">
 
-                  info@kodiscan.rw
+                  kodiscan08@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

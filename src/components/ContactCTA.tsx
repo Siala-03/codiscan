@@ -64,7 +64,7 @@ export function ContactCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="mailto:info@kodiscan.rw"
+              href="mailto:kodiscan08@gmail.com"
               whileHover={{
                 scale: 1.04
               }}

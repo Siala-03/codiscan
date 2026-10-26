@@ -121,7 +121,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Dental Imaging
+                  Digital X-Ray
                 </button>
               </li>
               <li>
@@ -137,7 +137,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  Mammography
+                  Portable X-Ray
                 </button>
               </li>
               <li>
@@ -145,7 +145,7 @@ export function Footer({ navigate }: FooterProps) {
                   onClick={() => navigate('catalog')}
                   className="text-gray-400 text-sm hover:text-[#06b6d4] transition-colors text-left">
 
-                  C-Arm & Fluoroscopy
+                  C-Arm & Dynamic X-Ray
                 </button>
               </li>
             </ul>

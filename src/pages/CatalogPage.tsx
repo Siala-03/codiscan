@@ -5,15 +5,13 @@ import {
   ScanIcon,
   TagIcon } from
 'lucide-react';
-const mobileRImage = new URL('../assets/mobile_r.PNG', import.meta.url).href;
-const radioFImage = new URL('../assets/radio_f.jpg', import.meta.url).href;
-const dental2dImage = new URL('../assets/dental 2d.png', import.meta.url).href;
-const cbctImage = new URL('../assets/cbct.jpg', import.meta.url).href;
-const ctScanImage = new URL('../assets/ct_scan.png', import.meta.url).href;
-const mriImage = new URL('../assets/mri.jpg', import.meta.url).href;
-const mammoImage = new URL('../assets/mammo.png', import.meta.url).href;
-const cArmImage = new URL('../assets/c-arm.jpg', import.meta.url).href;
-const fluoroscopyImage = new URL('../assets/flouroscopy.jpg', import.meta.url).href;
+const xrayFixedImage = new URL('../assets/Digital X-Ray (fixed).png', import.meta.url).href;
+const xrayMobileImage = new URL('../assets/digital x-ray(mobile).png', import.meta.url).href;
+const xrayPortableImage = new URL('../assets/Portable digital X-ray.png', import.meta.url).href;
+const ctScanImage = new URL('../assets/CT SCAN.jpg', import.meta.url).href;
+const mriImage = new URL('../assets/MRI.png', import.meta.url).href;
+const cArmImage = new URL('../assets/Mobile surgical C-ARM.png', import.meta.url).href;
+const dynamicXrayImage = new URL('../assets/dynamic x-ray.png', import.meta.url).href;
 import { type Page } from '../App';
 interface CatalogPageProps {
   navigate: (page: Page) => void;
@@ -34,27 +32,12 @@ interface Product {
 const products: Product[] = [
 // Diagnostic Imaging
 {
-  id: 'digital-xray-mobile',
-  name: 'Digital Radiography (Mobile)',
-  category: 'imaging',
-  image: mobileRImage,
-  description:
-  'Portable digital radiography system for bedside and mobile radiographic imaging with high-resolution flat-panel detection.',
-  specs: [
-  'Mobile platform design',
-  'Digital flat-panel detector',
-  'DICOM 3.0 compatible',
-  'CE & WHO certified'],
-
-  badge: 'Popular'
-},
-{
   id: 'digital-xray-fixed',
-  name: 'Digital Radiography (Fixed)',
+  name: 'Digital X-Ray (Fixed)',
   category: 'imaging',
-  image: radioFImage,
+  image: xrayFixedImage,
   description:
-  'Fixed-installation digital radiography system with advanced imaging capabilities for comprehensive diagnostic radiography.',
+  'Fixed-installation digital X-ray system with advanced imaging capabilities for comprehensive diagnostic radiography.',
   specs: [
   'Fixed installation',
   'High-resolution detector',
@@ -64,32 +47,32 @@ const products: Product[] = [
   badge: 'Popular'
 },
 {
-  id: 'dental-opg-2d',
-  name: 'Dental 2D OPG',
+  id: 'digital-xray-mobile',
+  name: 'Digital X-Ray (Mobile)',
   category: 'imaging',
-  image: dental2dImage,
+  image: xrayMobileImage,
   description:
-  'Dental orthopantomographic (OPG) system for comprehensive 2D dental imaging and treatment planning.',
+  'Mobile digital X-ray system for bedside and ward imaging with high-resolution flat-panel detection.',
   specs: [
-  '2D panoramic imaging',
-  'Digital sensor technology',
-  'Quick exposure time',
-  'Compact footprint'],
+  'Mobile platform design',
+  'Digital flat-panel detector',
+  'DICOM 3.0 compatible',
+  'CE & WHO certified'],
 
-  badge: 'New'
+  badge: 'Popular'
 },
 {
-  id: 'dental-cbct',
-  name: 'Dental CBCT',
+  id: 'portable-digital-xray',
+  name: 'Portable Digital X-Ray',
   category: 'imaging',
-  image: cbctImage,
+  image: xrayPortableImage,
   description:
-  'Cone Beam CT scanner for advanced 3D dental and maxillofacial imaging with high precision volumetric reconstruction.',
+  'Lightweight portable digital X-ray unit for point-of-care, field and emergency imaging.',
   specs: [
-  '3D volumetric imaging',
-  'High-precision reconstruction',
-  'Low radiation dose',
-  'Dental-specific software'],
+  'Lightweight, portable design',
+  'Wireless flat-panel detector',
+  'Fast image preview',
+  'DICOM compatible'],
 
   badge: 'New'
 },
@@ -124,27 +107,12 @@ const products: Product[] = [
   badge: 'Essential'
 },
 {
-  id: 'mammography',
-  name: 'Mammography',
-  category: 'imaging',
-  image: mammoImage,
-  description:
-  'Digital mammography system for breast imaging with advanced detection capabilities and minimal radiation exposure.',
-  specs: [
-  'Digital display technology',
-  'Dual-energy imaging option',
-  'Low radiation protocol',
-  'CE & WHO certified'],
-
-  badge: 'Essential'
-},
-{
   id: 'c-arm',
-  name: 'C-Arm',
+  name: 'Mobile Surgical C-Arm',
   category: 'imaging',
   image: cArmImage,
   description:
-  'Surgical C-Arm system with real-time fluoroscopy for intraoperative imaging guidance and surgical navigation.',
+  'Mobile surgical C-Arm system with real-time fluoroscopy for intraoperative imaging guidance and surgical navigation.',
   specs: [
   'Real-time fluoroscopy',
   'Mobile C-arm design',
@@ -154,12 +122,12 @@ const products: Product[] = [
   badge: 'Popular'
 },
 {
-  id: 'fluoroscopy',
-  name: 'Fluoroscopy',
+  id: 'dynamic-xray',
+  name: 'Dynamic X-Ray',
   category: 'imaging',
-  image: fluoroscopyImage,
+  image: dynamicXrayImage,
   description:
-  'Fluoroscopy system for dynamic real-time imaging of internal structures during diagnostic and interventional procedures.',
+  'Dynamic X-ray (fluoroscopy) system for real-time imaging of internal structures during diagnostic and interventional procedures.',
   specs: [
   'Real-time dynamic imaging',
   'Continuous fluoroscopy capability',

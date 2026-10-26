@@ -4,10 +4,10 @@ import {
   ArrowRightIcon,
   ScanIcon } from
 'lucide-react';
-const mobileRImage = new URL('../assets/mobile_r.PNG', import.meta.url).href;
-const cbctImage = new URL('../assets/cbct.jpg', import.meta.url).href;
-const ctScanImage = new URL('../assets/ct_scan.png', import.meta.url).href;
-const mriImage = new URL('../assets/mri.jpg', import.meta.url).href;
+const mobileRImage = new URL('../assets/digital x-ray(mobile).png', import.meta.url).href;
+const cArmImage = new URL('../assets/Mobile surgical C-ARM.png', import.meta.url).href;
+const ctScanImage = new URL('../assets/CT SCAN.jpg', import.meta.url).href;
+const mriImage = new URL('../assets/MRI.png', import.meta.url).href;
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
 import { WhyKodiscan } from '../components/WhyKodiscan';
@@ -80,7 +80,7 @@ export function HomePage({ navigate }: HomePageProps) {
               </div>
             </motion.div>
 
-            {/* Card 2 - Dental CBCT */}
+            {/* Card 2 - Mobile Surgical C-Arm */}
             <motion.div
               whileHover={{
                 y: -6,
@@ -90,8 +90,8 @@ export function HomePage({ navigate }: HomePageProps) {
 
               <div className="h-60 overflow-hidden">
                 <img
-                  src={cbctImage}
-                  alt="Dental CBCT"
+                  src={cArmImage}
+                  alt="Mobile Surgical C-Arm"
                   loading="lazy"
                   className="w-full h-full object-cover" />
 
@@ -107,10 +107,10 @@ export function HomePage({ navigate }: HomePageProps) {
                       fontFamily: "'Plus Jakarta Sans', sans-serif"
                     }}>
 
-                    Dental CBCT
+                    Surgical C-Arm
                   </h3>
                   <p className="text-gray-500 text-xs leading-relaxed">
-                    3D dental imaging
+                    Intraoperative imaging
                   </p>
                 </div>
               </div>

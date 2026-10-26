@@ -5,13 +5,13 @@ import {
   ScanIcon,
   TagIcon } from
 'lucide-react';
-const xrayFixedImage = new URL('../assets/Digital X-Ray (fixed).png', import.meta.url).href;
-const xrayMobileImage = new URL('../assets/digital x-ray(mobile).png', import.meta.url).href;
-const xrayPortableImage = new URL('../assets/Portable digital X-ray.png', import.meta.url).href;
-const ctScanImage = new URL('../assets/CT SCAN.jpg', import.meta.url).href;
-const mriImage = new URL('../assets/MRI.png', import.meta.url).href;
-const cArmImage = new URL('../assets/Mobile surgical C-ARM.png', import.meta.url).href;
-const dynamicXrayImage = new URL('../assets/dynamic x-ray.png', import.meta.url).href;
+const xrayFixedImage = new URL('../assets/digital-xray-fixed.webp', import.meta.url).href;
+const xrayMobileImage = new URL('../assets/digital-xray-mobile.webp', import.meta.url).href;
+const xrayPortableImage = new URL('../assets/portable-digital-xray.webp', import.meta.url).href;
+const ctScanImage = new URL('../assets/ct-scan.webp', import.meta.url).href;
+const mriImage = new URL('../assets/mri.webp', import.meta.url).href;
+const cArmImage = new URL('../assets/mobile-surgical-c-arm.webp', import.meta.url).href;
+const dynamicXrayImage = new URL('../assets/dynamic-xray.webp', import.meta.url).href;
 import { type Page } from '../App';
 interface CatalogPageProps {
   navigate: (page: Page) => void;

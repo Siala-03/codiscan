@@ -4,10 +4,10 @@ import {
   ArrowRightIcon,
   ScanIcon } from
 'lucide-react';
-const mobileRImage = new URL('../assets/digital x-ray(mobile).png', import.meta.url).href;
-const cArmImage = new URL('../assets/Mobile surgical C-ARM.png', import.meta.url).href;
-const ctScanImage = new URL('../assets/CT SCAN.jpg', import.meta.url).href;
-const mriImage = new URL('../assets/MRI.png', import.meta.url).href;
+const mobileRImage = new URL('../assets/digital-xray-mobile.webp', import.meta.url).href;
+const cArmImage = new URL('../assets/mobile-surgical-c-arm.webp', import.meta.url).href;
+const ctScanImage = new URL('../assets/ct-scan.webp', import.meta.url).href;
+const mriImage = new URL('../assets/mri.webp', import.meta.url).href;
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
 import { WhyKodiscan } from '../components/WhyKodiscan';

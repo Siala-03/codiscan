@@ -12,6 +12,8 @@ const ctScanImage = new URL('../assets/ct-scan.webp', import.meta.url).href;
 const mriImage = new URL('../assets/mri.webp', import.meta.url).href;
 const cArmImage = new URL('../assets/mobile-surgical-c-arm.webp', import.meta.url).href;
 const dynamicXrayImage = new URL('../assets/dynamic-xray.webp', import.meta.url).href;
+const cbctImage = new URL('../assets/dental-cbct.webp', import.meta.url).href;
+const ultrasoundImage = new URL('../assets/ultrasound.webp', import.meta.url).href;
 import { type Page } from '../App';
 interface CatalogPageProps {
   navigate: (page: Page) => void;
@@ -135,6 +137,36 @@ const products: Product[] = [
   'Cinematic recording option'],
 
   badge: 'Essential'
+},
+{
+  id: 'dental-cbct',
+  name: 'Dental CBCT',
+  category: 'imaging',
+  image: cbctImage,
+  description:
+  'Cone Beam CT scanner for advanced 3D dental and maxillofacial imaging with high precision volumetric reconstruction.',
+  specs: [
+  '3D volumetric imaging',
+  'High-precision reconstruction',
+  'Low radiation dose',
+  'Dental-specific software'],
+
+  badge: 'New'
+},
+{
+  id: 'ultrasound',
+  name: 'Ultrasound',
+  category: 'imaging',
+  image: ultrasoundImage,
+  description:
+  'Diagnostic ultrasound system for real-time, radiation-free imaging across general, obstetric, cardiac and vascular applications.',
+  specs: [
+  'Real-time imaging',
+  'Color & power Doppler',
+  'Multiple transducer support',
+  'Radiation-free'],
+
+  badge: 'New'
 },
 ];
 

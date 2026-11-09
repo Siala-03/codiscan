@@ -193,7 +193,7 @@ export function WhyKodiscan() {
                   Flexible Terms
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Choose from 12 to 60-month renting plans tailored to your
+                  Choose from 36 to 60-month renting plans tailored to your
                   facility's budget and operational requirements.
                 </p>
               </div>

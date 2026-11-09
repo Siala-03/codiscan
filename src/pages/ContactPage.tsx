@@ -12,6 +12,7 @@ import { type Page } from '../App';
 interface ContactPageProps {
   navigate: (page: Page) => void;
 }
+const INQUIRY_ENDPOINT = 'https://formsubmit.co/ajax/kodiscan08@gmail.com';
 interface FormState {
   name: string;
   email: string;
@@ -32,6 +33,8 @@ export function ContactPage({ navigate }: ContactPageProps) {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
   const formRef = useRef<HTMLDivElement>(null);
   const formInView = useInView(formRef, {
     once: true,
@@ -47,9 +50,44 @@ export function ContactPage({ navigate }: ContactPageProps) {
       [e.target.name]: e.target.value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError('');
+    try {
+      // FormSubmit forwards the inquiry by email to the address in the URL.
+      const res = await fetch(INQUIRY_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New inquiry from ${form.name} (${form.facility})`,
+          _replyto: form.email,
+          _template: 'table',
+          _captcha: 'false',
+          Name: form.name,
+          Email: form.email,
+          Phone: form.phone,
+          Facility: form.facility,
+          'Facility Type': form.facilityType,
+          'Equipment Interest': form.interest,
+          Message: form.message
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.success === false || data.success === 'false') {
+        throw new Error(data.message || 'Request failed');
+      }
+      setSubmitted(true);
+    } catch {
+      setError(
+        'Sorry, your message could not be sent. Please try again or email us at kodiscan08@gmail.com.'
+      );
+    } finally {
+      setSending(false);
+    }
   };
   return (
     <div className="w-full min-h-screen bg-white">
@@ -388,16 +426,17 @@ export function ContactPage({ navigate }: ContactPageProps) {
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#0d1b2a] text-sm focus:outline-none focus:ring-2 focus:ring-[#06b6d4] focus:border-transparent transition-all bg-white">
 
-                          <option value="">Select category...</option>
-                          <option value="imaging">Diagnostic Imaging</option>
-                          <option value="monitoring">Patient Monitoring</option>
-                          <option value="surgical">Surgical Equipment</option>
-                          <option value="laboratory">
-                            Laboratory Equipment
-                          </option>
-                          <option value="respiratory">Respiratory Care</option>
-                          <option value="sterilization">Sterilization</option>
-                          <option value="multiple">Multiple Categories</option>
+                          <option value="">Select equipment...</option>
+                          <option value="Digital X-Ray (Fixed)">Digital X-Ray (Fixed)</option>
+                          <option value="Digital X-Ray (Mobile)">Digital X-Ray (Mobile)</option>
+                          <option value="Portable Digital X-Ray">Portable Digital X-Ray</option>
+                          <option value="CT Scan">CT Scan</option>
+                          <option value="MRI">MRI</option>
+                          <option value="Mobile Surgical C-Arm">Mobile Surgical C-Arm</option>
+                          <option value="Dynamic X-Ray">Dynamic X-Ray</option>
+                          <option value="Dental CBCT">Dental CBCT</option>
+                          <option value="Ultrasound">Ultrasound</option>
+                          <option value="Multiple">Multiple / Not sure</option>
                         </select>
                       </div>
                     </div>
@@ -420,11 +459,18 @@ export function ContactPage({ navigate }: ContactPageProps) {
 
                     </div>
 
+                    {error &&
+                    <p role="alert" className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
+                        {error}
+                      </p>
+                    }
+
                     <button
                     type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#2563eb] text-white font-semibold text-base hover:bg-blue-700 transition-colors duration-200 shadow-lg shadow-blue-500/20">
+                    disabled={sending}
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#2563eb] text-white font-semibold text-base hover:bg-blue-700 transition-colors duration-200 shadow-lg shadow-blue-500/20 disabled:opacity-60 disabled:cursor-not-allowed">
 
-                      Send Message <SendIcon size={18} />
+                      {sending ? 'Sending...' : <>Send Message <SendIcon size={18} /></>}
                     </button>
                   </form>
                 </>

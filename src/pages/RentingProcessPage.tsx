@@ -47,8 +47,8 @@ const steps = [
   description:
   'Sign your flexible rent agreement with transparent terms — no hidden fees. Our team responds within 24 hours; most equipment arrives within 30 days due to sea imports and is then installed and tested promptly.',
   details: [
-  '12–60 month flexible terms',
-  'Fixed monthly payments',
+  '36–60 month flexible terms',
+  'Shared revenue model — no fixed rental payments',
   'Professional installation & testing included',
   'Staff training provided upon delivery']
 
@@ -70,7 +70,7 @@ const steps = [
 const faqs = [
 {
   q: 'What is the minimum rent term?',
-  a: "Our minimum rent term is 12 months. We offer flexible terms from 12 to 60 months, allowing you to choose a plan that fits your facility's budget and operational planning cycle."
+  a: "Our minimum rent term is 36 months. We offer flexible terms from 36 to 60 months, allowing you to choose a plan that fits your facility's budget and operational planning cycle."
 },
 {
   q: 'Is there a down payment required?',
@@ -270,35 +270,7 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
               Flexible Plans for Every Facility
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm text-center">
-              <p className="text-[#06b6d4] text-sm font-semibold uppercase tracking-wider mb-3">
-                Short Term
-              </p>
-              <p
-                className="text-5xl font-extrabold text-[#0d1b2a] mb-2"
-                style={{
-                  fontFamily: "'Plus Jakarta Sans', sans-serif"
-                }}>
-
-                12
-              </p>
-              <p className="text-gray-500 mb-6">months</p>
-              <ul className="text-left flex flex-col gap-2 text-sm text-gray-600">
-                <li className="flex items-center gap-2">
-                  <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Ideal for pilot programs
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Competitive shorter-term pricing
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Full support included
-                </li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="bg-[#0d1b2a] rounded-2xl p-8 border border-[#06b6d4]/30 shadow-xl text-center relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#06b6d4] text-white text-xs font-bold px-3 py-1 rounded-full">
                 Most Popular
@@ -346,7 +318,7 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
               <ul className="text-left flex flex-col gap-2 text-sm text-gray-600">
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
-                  Lowest long-term monthly rate
+                  Best long-term value
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircleIcon size={15} className="text-[#06b6d4]" />
@@ -362,7 +334,7 @@ export function RentingProcessPage({ navigate }: RentingProcessPageProps) {
         </div>
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500 bg-gray-50 inline-block px-4 py-2 rounded-lg">
-            * All rental plans feature a <span className="font-semibold text-[#0d1b2a]">percentage-based revenue share model</span>. Payments are calculated based on the equipment's generated revenue.
+            * No fixed rental payments. All plans use a <span className="font-semibold text-[#0d1b2a]">shared revenue model</span>: payments are a percentage of the revenue the equipment generates.
           </p>
         </div>
       </section>
